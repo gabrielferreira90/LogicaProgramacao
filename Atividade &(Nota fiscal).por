@@ -36,16 +36,7 @@ programa
 
 	total = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 +v9 + v10
 
-	se(total >= 1500) {
-		desconto = total *0.10
-		final= total - desconto
-		escreva("\n Seu total foi: ", total, "Com de desconto de 10% fica:", final)
-	}senao{
-		escreva("\n Seu total foi:", total)
-	}
-
-
-	escreva(\n" = = = = = = = = = = Nota Fiscal  = = = = = = = = = = ")
+	escreva(" = = = = = = = = = = Nota Fiscal  = = = = = = = = = = ")
 	escreva("\n Seu nome é:", nome)
 	escreva("\n De cpf:", cpf)
 	escreva("\n Seu Gabinete foi:", v1)
@@ -59,7 +50,13 @@ programa
 	escreva("\n Seu Teclado foi:", v9)
 	escreva("\n Mouse:", v10)
 	
-	
+	se(total >= 1500) {
+		desconto = total *0.10
+		final= total - desconto
+		escreva("\n Seu total foi: ", total,"Reais", "Com de desconto de 10% fica:", final,"Reais")
+	}senao{
+		escreva("\n Seu total foi:", total, "Reais")
+	}
 
 	
 	
@@ -87,7 +84,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 33; 
+ * @POSICAO-CURSOR = 1439; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
